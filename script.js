@@ -5,12 +5,13 @@ function start(){
         document.getElementById("decimopais").innerHTML = "<p>" + "Este é o 10º país: " + "<p>" + "<h3>" + paises[10]+"</h3>" + "<br>";
 
         var posicao = parseInt(prompt("Digite um valor"));
-        posicao >0 && posicao<30? document.getElementById ("paisprocurado").innerHTML = "O país procurado é: " +"<h4>"+ paises[posicao]: document.write( "<h5> Digite um número válido. </h5>")
+        posicao >0 && posicao<=30? document.getElementById ("paisprocurado").innerHTML = "O país procurado é: " +"<h4>"+ paises[posicao]: document.write( "<h5> Digite um número válido. </h5>")
             
         
 }
 const iniciar = document.getElementById("start");
 iniciar.addEventListener('click', start)
+
 
 
 
